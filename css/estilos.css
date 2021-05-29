@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+:root {
+    --dark-bg-color: rgb(0, 50, 69);
+    --default-bg-color: rgb(229, 237, 241);
+    --light-bg-color: rgb(178, 253, 223);
+    --text-primary-color: #f7f8f8;
+    --accent-bg-color: #f3f1f1;
+    --primary-text-color: #212121;
+    --secondary-text-color: #686868;
+    --divider-color: #686868;
+}
+
+* {
+    font-family: Verdana;
+}
+
+/*
+    Selector para la cabecera de la página
+ */
+header {
+    height: fit-content;
+    color: var(--dark-bg-color);
+    background-color: var(--light-bg-color);
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+section {
+    width: 550px;
+    float: left;
+    min-height: 600px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+aside {
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 450px;
+    float: right;
+    min-height: 600px;
+    margin-bottom: 15px;
+    /* color para la barra lateral */
+    border-left: thick solid var(--divider-color);
+}
+
+form,
+ul,
+table,
+caption,
+td {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+    box-sizing: content-box;
+}
+
+ul {
+    width: 400px;
+    color: var(--dark-bg-color);
+    background-color: var(--light-bg-color);
+}
+
+table {
+    border-collapse: separate;
+    min-width: 200px;
+    padding: 15px;
+    color: var(--text-primary-color);
+    background-color: var(--dark-bg-color);
+}
+
+caption {
+    width: fit-content;
+    text-align: center;
+    color: var(--dark-bg-color);
+    background-color: var(--light-bg-color);
+}
+
+th {
+    width: fit-content;
+    text-align: center;
+    font-size: 15px;
+}
+
+td {
+    width: fit-content;
+    text-align: center;
+    border-radius: 0px;
+}
+
+/*
+    Selectores para los enlaces dentro de una tabla.
+    El primero es para el estado normal y el segundo es
+    para el momento en el que el ratón pasa por encima.
+ */ 
+td a {
+    color: var(--text-primary-color);
+}
+
+td a:hover {
+    color: var(--light-bg-color);
+}
+
+/*
+	 Selector para el contenedor de las páginas web
+  */
+.contenedor {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1050px;
+    color: var(--dark-bg-color);
+    background-color: var(--accent-bg-color);
+    padding: 5px;
+    display: table;
+}
+
+/*
+	 Selector para dar un margen a los textos
+  */
+.margen {
+    margin-left: 10px;
+}
+
+/*
+	 Selectores para formularios, etiquetas y campos 
+	 de entrada
+  */
+form {
+    margin-left: 10px;
+    padding: 5px;
+    color: var(--dark-bg-color);
+    background-color: var(--light-bg-color);
+}
+
+form input[type=text],
+form input[type=email] {
+    width: max-content;
+}
+
+form select,
+form textarea {
+    color: var(--secondary-text-color);
+}
+
+form textarea {
+    resize: none;
+}
+
+.formulario {
+    display: table;
+}
+
+.formulario>p {
+    display: table-row;
+}
+
+.formulario>p>label {
+    display: table-cell;
+}
+
+.formulario>p>input {
+    display: table-cell;
+}
